@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "node-sass public/wp-content/themes/example/assets/scss/ --output public/wp-content/themes/example/assets/css --source-map public/wp-content/themes/example/assets/css -w --output-style expanded",
+    "watch:server": "browser-sync start --config bs-config.js",
+    "watch": "npm-run-all -p watch:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
